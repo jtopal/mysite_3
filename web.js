@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
     var fs = require ('fs');
-    fs.readFile('./index.html',function(err,data){
+    fs.readFile('index.html',function(err,data){
   console.log(data.toString()); //replace console.log with the code to write to the response.
 });
 
