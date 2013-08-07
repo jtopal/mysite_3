@@ -91,7 +91,29 @@ p {
 .footer a {
 	color: #ccccff;
 	}
+
+
+ /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+ div.addthis_toolbox {
+  width:180px;
+  margin: 0 auto;
+ }
+
 	</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43017035-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 </head>
 <body>
 
@@ -105,7 +127,7 @@ p {
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="brand" href="#">Bitstarter on dev environment</a>
+		<a class="brand" href="#">Bitstarter</a>
 		<div class="nav-collapse collapse">
 			<ul class="nav">
 				<li class="active"><a href="#">Home</a></li>
@@ -124,6 +146,8 @@ p {
 		<h1>Pic Captionator / Send or Drink</h1>
 	</div>
 </div>
+
+
 <div class="row-fluid subheading">
 	<div class="span12">
 
@@ -166,10 +190,23 @@ p {
 <div class="span6 offset3 order">
 	<button class="btn btn-success btn-large">Preorder</button>
 	</div>
-	<div class="span8 offset2 social">
-		<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-		<button class="btn btn-facebook"><i class ="icon-facebook"></i> | Facebook</button>
-	</div>
+
+  <div class="span8 offset2 social">
+  <!-- AddThis Button BEGIN -->
+
+        <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5201a3a93e00ad61"></script>
+<!-- AddThis Button END -->
+  <!-- AddThis Button END -->
+</div>
+
 </div>
 </div>
 <div class="row-fluid section1">
@@ -240,7 +277,19 @@ p {
 			</a>, without all the stuff that would otherwise be
 			put at the bottom of the page.</p>
 			</div>
-			</div>
-		</div>
-	</boy>
+			</div>	
+	</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43017035-1', 'herokuapp.com');
+  ga('send', 'pageview');
+
+</script>
+
+	</body>
 </html>
