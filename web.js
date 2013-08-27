@@ -7,6 +7,14 @@ app.get('/', function(request, response) {
 var fs = require('fs');
 var buf = new Buffer (fs.readFileSync('index.html'), 'utf-8');
   response.send(buf.toString());
+
+
+var buf = new Buffer (fs.readFileSync('about.html'), 'utf-8');
+  response.send(buf.toString());
+
+var buf = new Buffer (fs.readFileSync('contact.html'), 'utf-8');
+  response.send(buf.toString());
+
  });
 
 
