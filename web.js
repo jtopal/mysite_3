@@ -13,7 +13,7 @@ app.get('about.html', function(request, response){
 	response.send(buf.toString());
 app.get('contact.html', function(request, response){
         res.send(fs.readFileSync('contact.html'), 'utf-8');
-	response.send(but.toString());
+	response.send(buf.toString());
 
  });
 
